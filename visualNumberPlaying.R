@@ -22,6 +22,8 @@ repeat {
 }
 rm(list=ls())
 
+
+
 #### Creating a vertical number hourglass with "repeat" ----
 #user set (less than 10, to keep spacing)
 middle.number.of.hourglass <- 9
@@ -44,6 +46,8 @@ repeat {
 }
 rm(list=ls())
 
+
+
 #### Creating a horizontal number hourglass with "repeat" ----
 #user set (for now, single digits only)
 middle.number.of.hourglass <- 9
@@ -65,3 +69,63 @@ repeat {
   }
 }
 rm(list=ls())
+
+
+
+#### Number diamond with "repeat" ----
+#user set (single digits)
+middle.number.of.diamond <- 6
+
+#for loop use
+m <- middle.number.of.diamond
+i = 1
+repeat {
+  cat(rep(" ",(m-i+1)),rep(i,(2*i-1)),"\n")
+  i=i+1
+  if(i>=(m)){
+    repeat {
+      cat(rep(" ",(m-i+1)),rep(i,(2*i-1)),"\n")
+      i=i-1
+      if(i<1) {break}
+    }
+    break
+  }
+}
+
+
+
+
+#### Trying to create a circle of numbers with "repeat"----
+#User set
+center.number <- 6
+
+#for loop use
+cn <- center.number
+i=1
+#setting the diameter of the circle
+diam <- cn*2-1
+
+repeat {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+#Trying to piece this thing together (work)
+cat("1"); cat("@")
+for(i in 1:10) cat(i)
+cat(rep(" ",(cn-1)),1,"\n"); cat(rep(cn,diam))
+for(i in 1:cn)cat(rep(" ",(cn-i+1)),rep(i,(2*i-1)),"\n")
+
+
+
+
+
