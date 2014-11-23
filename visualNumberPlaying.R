@@ -110,15 +110,6 @@ repeat {
 }
 
 
-
-
-
-
-
-
-
-
-
 #Trying to piece this thing together (work)
 cat("1"); cat("@")
 for(i in 1:10) cat(i)
@@ -126,6 +117,5 @@ cat(rep(" ",(cn-1)),1,"\n"); cat(rep(cn,diam))
 for(i in 1:cn)cat(rep(" ",(cn-i+1)),rep(i,(2*i-1)),"\n")
 
 
- 
 
 
