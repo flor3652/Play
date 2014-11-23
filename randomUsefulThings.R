@@ -22,17 +22,3 @@ colnames(x) <- colnames(x, do.NULL=FALSE, prefix="variable")
 #for a data frame
 colnames(y) <- NULL
 colnames(y) <- colnames(y, do.NULL=FALSE, prefix="variable")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
