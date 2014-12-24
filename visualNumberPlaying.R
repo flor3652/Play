@@ -2,7 +2,7 @@
 
 #### Making a number pyramid with "repeat" ----
 #user set
-height.of.number.tower <- 12
+height.of.number.tower <- 20
 
 #for loop use
 nt <- height.of.number.tower - 1
@@ -39,6 +39,36 @@ repeat {
     repeat {
       i=i-1
       cat(rep(" ",(i)),rep(i,((m*2-1)-2*(i-1))),rep(" ",(i)),"\n")
+      if(i<2){break}
+    }
+    break
+  }
+}
+rm(list=ls())
+
+
+
+# As the above gets thrown off with numbers greater than 9, the following is an attempt to revamp the function to be able to handle these numbers ----
+#user set
+middle.number.of.hourglass <- 12
+
+#for loop use
+m <- middle.number.of.hourglass
+i=1
+repeat {
+  if(i<10)
+    {cat(rep(" ",(i)),rep(i,((m*2-1)-2*(i-1))),rep(" ",(i)),"\n",sep="  ")}
+  else if(i>=10 & i<100)
+  {cat(rep(" ",((3/2)*i + i%%2)),rep(i,((m*2-1)-2*(i-1))),rep(" ",(i)),"\n",sep=" ")}
+  i=i+1
+  if(i>m) {
+    i=i-1
+    repeat {
+      i=i-1
+      if(i<10)
+      {cat(rep(" ",(i)),rep(i,((m*2-1)-2*(i-1))),rep(" ",(i)),"\n",sep="  ")}
+      else if(i>=10 & i<100)
+      {cat(rep(" ",((3/2)*i)),rep(i,((m*2-1)-2*(i-1))),rep(" ",(i)),"\n",sep=" ")}
       if(i<2){break}
     }
     break
