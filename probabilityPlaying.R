@@ -50,3 +50,7 @@ ran[i] <- door.contents[sample(c(guess,switched.guess),1)]
 cat("The probability of getting the car by staying with the same guess are ", mean(sa)*100, "%", sep="")
 cat("The probability of getting the car by switching your guess are ", mean(sw)*100, "%", sep="")
 cat("The probability of getting the car by randomly deciding are ", mean(ran)*100, "%", sep="")
+
+
+
+#  ----
